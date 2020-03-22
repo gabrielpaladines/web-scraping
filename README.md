@@ -1,2 +1,2 @@
-# web-scraping
-UOC - Tipología y Ciclo de vida de los datos - Práctica 1
+# UOC - Tipología y Ciclo de vida de los datos - Práctica 1 (Web Scraping)
+
