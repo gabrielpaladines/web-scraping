@@ -1,5 +1,7 @@
 # UOC - Tipología y Ciclo de vida de los datos - Práctica 1 (Web Scraping)
 
+Requisitos previos: instalar pip, builtwith, whois, requests, beautifulsoup4. Una vez instalado pip (https://www.liquidweb.com/kb/install-pip-windows/), el resto se pueden incluir mediante "pip install builtwith", y así sucesivamente.
+
 Introducción: El objetivo de esta práctica es crear un dataset a partir de los datos contenidos en una página web.
 
 1. Contexto. Explicar en qué contexto se ha recolectado la información. Explique por qué el sitio web elegido proporciona dicha información.
