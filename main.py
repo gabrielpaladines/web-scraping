@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import builtwith
 import whois
 from scraper import FoodScraper
@@ -11,7 +12,7 @@ output_file = "dataset.csv"
 print(builtwith.builtwith(_url))
 
 # Propietario
-#print(whois.whois(_url))
+# print(whois.whois(_url))
 
 # Scraping
 scraper = FoodScraper(_url)

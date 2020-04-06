@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 import time
 from bs4 import BeautifulSoup
@@ -27,7 +28,7 @@ class FoodScraper():
 
 
     def scrape(self):
-        print("Iniciando la busquedad de productos en oferta\n")
+        print("Iniciando la busqueda de productos en oferta\n")
 
         # timer
         start_time = time.time()
@@ -52,11 +53,11 @@ class FoodScraper():
 
 
     def data2csv(self, file_name):
-
         # from another class
-        with open(file_name, 'wb') as csv_file:
-            # wr = csv.writer(csv_file, delimiter=',')
+        with open(file_name, 'w') as csv_file:
+            wr = csv.writer(csv_file, delimiter=',')
+            wr.writerow(["Nombre", "Marca", "Categorias", "Precio Original",
+                         "Precio Final", "Moneda", "Fecha de captura"])
             for product in self.data:
-                pprint(vars(product))
-                # wr.writerow()
+                wr.writerow(list(product))
 
