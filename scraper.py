@@ -57,7 +57,7 @@ class FoodScraper():
         with open(file_name, 'w') as csv_file:
             wr = csv.writer(csv_file, delimiter=',')
             wr.writerow(["Nombre", "Marca", "Categorias", "Precio Original",
-                         "Precio Final", "Moneda", "Fecha de captura"])
+                         "Precio Final", "Moneda", "Estado", "Fecha de captura"])
             for product in self.data:
                 wr.writerow(list(product))
 
