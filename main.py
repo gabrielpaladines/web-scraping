@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import builtwith
-pip3 install python-whois
 import whois
 from scraper import FoodScraper
 
