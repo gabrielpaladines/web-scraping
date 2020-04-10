@@ -1,5 +1,7 @@
 # UOC - Tipología y Ciclo de vida de los datos - Práctica 1 (Web Scraping)
 
+Tipología y ciclo de vida de los datos. Práctica 1.
+
 Autores: Gabriel Paladines y Jaime Pardo
 
 Requisitos previos: instalar pip, builtwith, whois, requests, beautifulsoup4. Una vez instalado pip (https://www.liquidweb.com/kb/install-pip-windows/), el resto se pueden incluir mediante, por ejemplo, "pip install builtwith", y así sucesivamente.
@@ -17,7 +19,7 @@ Evolución de los precios y la disponibilidad de alimentos y otros productos par
 
 El dataset contiene un listado de productos (básicamente de alimentación y cuidado de la higiene), para los cuales se puede ver el precio, la categoría y si tiene o no descuento. En el punto 5 desarrollaremos esta información. 
 
-La extracción de información se lleva a cabo cada 24h.  
+El objetivo sería hacer una extracción de información cada 24h.
 
 4. Representación gráfica. Presentar una imagen o esquema que identifique el dataset visualmente.
 
@@ -25,20 +27,30 @@ La extracción de información se lleva a cabo cada 24h.
 
 5. Contenido. Explicar los campos que incluye el dataset, el periodo de tiempo de los datos y cómo se ha recogido.
 
- 
+(Incluir imagen dataset)
 
 El dataset incluye los siguientes campos: 
+
 Nombre: nombre completo del producto, suele incluir el formato
 Marca: marca del producto
 Categorías: grupo de hasta 4 categorías, de más general a más específica
 Precio original: el precio original aparece debido a que hemos decidido filtrar para mostrar únicamente productos en oferta. 
 Precio final: precio de compra para el cliente
+Estado: disponibilidad (o no) del producto
 Moneda: Euro
-Fecha de captura: 
+Fecha de captura: fecha del momento de la extracción
  
-El periodo de tiempo es de 24h (faltaría concretar de qué día a qué día se recogen los datos).
+El periodo de tiempo previsto es de 24h.
 
-La recogida de datos se ha hecho, por simplicidad, únicamente con la primera página de la búsqueda.
+La recogida de datos se ha hecho, por simplicidad, únicamente con la primera página de la búsqueda y con los productos con descuento. Para ello se ha creado un script en Python, el cual mediante la técnica de web scraping extrae los productos directamente desde la siguiente página:
+
+https://www.elcorteingles.es/ofertas-supermercado/
+
+En dicha página identificamos las etiquetas y extraemos la información necesaria. Por ejemplo:
+
+ 
+
+ 
 
 6. Agradecimientos. Presentar al propietario del conjunto de datos. Es necesario incluir citas de investigación o análisis anteriores (si los hay).
 
@@ -66,12 +78,17 @@ https://github.com/gabrielpaladines/web-scraping
 
 10. Dataset. Publicación del dataset en formato CSV en Zenodo con una pequeña descripción.
 
-La publicación se ha llevado a cabo en https://zenodo.org/ y se puede encontrar en…
-El formado es “.csv” separado por comas (no punto y coma).
+La publicación se ha llevado a cabo en https://zenodo.org/ y se puede encontrar en:
 
 PRUEBA: https://sandbox.zenodo.org/record/521204
+https://sandbox.zenodo.org/deposit/521217
 DEFINITIVO no en sandbox
+
+El formado es “.csv” separado por comas (no punto y coma).
 
 11. Entrega. Presentar el trabajo con el DOI del dataset en Github.
 El DOI (Digital object identifier) proporcionado por Github/Zenodo es XXXXXXX
 
+https://guides.github.com/activities/citable-code/
+
+En Github hay que subir el dataset en csv, el DOI y el link de Zenodo
