@@ -8,6 +8,7 @@ Descripción de ficheros:
 - README.md: contiene las respuestas a la práctica, siguiendo el guión del enunciado
 - Wiki: es este mismo documento, el cual describe los ficheros contenidos en el repositorio
 - dataset.csv: contiene los resultados de aplicar el web scraping
+- Tipología y ciclo de vida de los datos - PRA1 - Texto.pdf
 - main.py: ejecuta el programa principal
 - product.py: define la clase producto
 - scraper.py: contiene la clase principal con la que se extraen los datos
