@@ -11,3 +11,4 @@ Descripción de ficheros:
 - main.py: ejecuta el programa principal
 - product.py: define la clase producto
 - scraper.py: contiene la clase principal con la que se extraen los datos
+- .gitignore: especifica intencionalmente qué archivos no se deben incluir en el repositorio
