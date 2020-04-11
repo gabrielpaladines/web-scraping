@@ -12,6 +12,7 @@ class FoodScraper():
     def __init__(self, _url):
         self.url = _url
         self.data = []
+        # Se limita la búsqueda para acotar el tiempo dedicado.
         self.max_pages = 3
 
 
@@ -32,7 +33,7 @@ class FoodScraper():
 
 
     def scrape(self):
-        page_counter = 1
+        page_counter = 2
         print("Iniciando la busqueda de productos en oferta\n")
 
         # timer
