@@ -5,3 +5,9 @@ Jaime Pardo
 
 Descripción de ficheros:
 
+- README.md: contiene las respuestas a la práctica, siguiendo el guión del enunciado
+- Wiki: es este mismo documento, el cual describe los ficheros contenidos en el repositorio
+- dataset.csv: contiene los resultados de aplicar el web scraping
+- main.py: ejecuta el programa principal
+- product.py: 
+- scraper.py: 
