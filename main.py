@@ -12,7 +12,8 @@ output_file = "dataset.csv"
 print(builtwith.builtwith(_url))
 
 # Propietario
-print(whois.whois(_url))
+# En este caso no se va a mostrar porque toda la información que devuelve es "null"
+# print(whois.whois(_url))
 
 # Scraping
 scraper = FoodScraper(_url)
