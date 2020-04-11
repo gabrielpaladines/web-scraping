@@ -9,5 +9,5 @@ Descripción de ficheros:
 - Wiki: es este mismo documento, el cual describe los ficheros contenidos en el repositorio
 - dataset.csv: contiene los resultados de aplicar el web scraping
 - main.py: ejecuta el programa principal
-- product.py: 
-- scraper.py: 
+- product.py: define la clase producto
+- scraper.py: contiene la clase principal con la que se extraen los datos
