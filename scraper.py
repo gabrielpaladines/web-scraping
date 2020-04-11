@@ -12,7 +12,7 @@ class FoodScraper():
     def __init__(self, _url):
         self.url = _url
         self.data = []
-        self.max_pages = 2
+        self.max_pages = 3
 
 
     def __download_html(self, url):
@@ -32,7 +32,7 @@ class FoodScraper():
 
 
     def scrape(self):
-        page_counter = 2
+        page_counter = 1
         print("Iniciando la busqueda de productos en oferta\n")
 
         # timer
