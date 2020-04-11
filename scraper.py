@@ -12,8 +12,8 @@ class FoodScraper():
     def __init__(self, _url):
         self.url = _url
         self.data = []
-        # Se limita la búsqueda para acotar el tiempo dedicado.
-        self.max_pages = 3
+        # Se permite limitar la búsqueda para acotar el tiempo dedicado.
+        self.max_pages = 150
 
 
     def __download_html(self, url):
