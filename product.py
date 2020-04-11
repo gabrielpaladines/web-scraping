@@ -8,6 +8,8 @@ class Product():
         self.__dict__.update(iterable, **kwargs)
         # Inicializamos la descripcion del producto
         self.descripcion = ''
+        self.brand = ''
+        self.currency = 'EUR'
         # Colocamos la fecha de creacion
         self.created_at = date.today()
         # Convertimos las categorias del producto a texto
